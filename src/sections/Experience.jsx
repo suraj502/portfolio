@@ -1,38 +1,48 @@
 const experiences = [
   {
-    period: "2022 — Present",
-    role: "Senior Frontend Engineer",
-    company: "Tech Innovators Inc.",
+    period: "Feb 2026 — Present",
+    role: "Technical Team Member",
+    company:
+      "Indian Society for Technical Education (ISTE) - College of Engineering Trivandrum",
     description:
-      "Leading frontend architecture for a suite of fintech products. Implemented micro-frontend architecture, reduced bundle size by 40%, and mentored a team of 5 developers.",
-    technologies: ["React", "TypeScript", "Next.js", "GraphQL"],
+      "Working as part of the technical team contributing to technical events, collaborating with fellow students, and gaining experience in organizing and supporting technology-driven initiatives.",
+    technologies: ["Web Development", "Team Collaboration", "Technical Events"],
     current: true,
   },
   {
-    period: "2020 — 2022",
-    role: "Frontend Engineer",
-    company: "Digital Solutions Co.",
+    period: "Nov 2025 — Present",
+    role: "Internshala Student Partner",
+    company: "Internshala",
     description:
-      "Built and maintained multiple React applications for enterprise clients. Introduced automated testing practices that improved code coverage to 85%.",
-    technologies: ["React", "Redux", "Jest", "Cypress"],
+      "Representing Internshala within the college community by promoting internships and skill development programs while helping students discover learning and career opportunities.",
+    technologies: ["Communication", "Community Engagement", "Leadership"],
     current: false,
   },
   {
-    period: "2019 — 2020",
-    role: "Junior Developer",
-    company: "StartUp Labs",
+    period: "2023 — 2027",
+    role: "Bachelor of Technology (BTech) - Information Technology",
+    company: "Dr. A.P.J. Abdul Kalam Technical University",
     description:
-      "Contributed to the development of a SaaS platform from MVP to production. Collaborated with designers to implement pixel-perfect UI components.",
-    technologies: ["React", "Node.js", "MongoDB", "AWS"],
+      "Currently pursuing B.Tech in Information Technology while developing skills in MERN stack, Data Structures and Algorithms, Docker, and Cloud Computing.",
+    technologies: ["C", "C++", "DSA", "Web Development"],
     current: false,
   },
   {
-    period: "2018 — 2019",
-    role: "Freelance Developer",
-    company: "Self-Employed",
+    period: "Oct 2025",
+    role: "J.P. Morgan Quantitative Research Job Simulation",
+    company: "Forage",
     description:
-      "Delivered custom web solutions for small businesses and startups. Built 15+ websites and applications, handling everything from design to deployment.",
-    technologies: ["JavaScript", "PHP", "WordPress", "MySQL"],
+      "Completed the J.P. Morgan Quantitative Research virtual job simulation, gaining exposure to financial data analysis and quantitative problem-solving.",
+    technologies: ["Data Analysis", "Quantitative Research"],
+    current: false,
+  },
+  {
+    period: "Aug 2025",
+    role: "MongoDB and the Document Model",
+    company: "MongoDB",
+    description:
+      "Learned MongoDB fundamentals including the document data model, database design concepts, and working with MongoDB Atlas.",
+    technologies: ["MongoDB", "Database Design", "MongoDB Atlas"],
     current: false,
   },
 ];
@@ -54,15 +64,15 @@ export const Experience = () => {
           >
             Career Journey
           </span>
+
           <h2
             className="text-4xl md:text-5xl font-bold
            mt-4 mb-6 animate-fade-in animation-delay-100
             text-secondary-foreground"
           >
-            Experience that{" "}
+            My learning{" "}
             <span className="font-serif italic font-normal text-white">
-              {" "}
-              speaks volumes.
+              journey so far.
             </span>
           </h2>
 
@@ -70,8 +80,9 @@ export const Experience = () => {
             className="text-muted-foreground
            animate-fade-in animation-delay-200"
           >
-            A timeline of my professional growth, from curious beginner to
-            senior engineer leading teams and building products at scale.
+            A timeline of my academic growth, certifications, and technical
+            involvement while building my skills in software development,
+            cloud computing, and modern web technologies.
           </p>
         </div>
 
@@ -102,17 +113,19 @@ export const Experience = () => {
                       : "md:col-start-2 md:pl-16"
                   }`}
                 >
-                  <div
-                    className={`glass p-6 rounded-2xl border border-primary/30 hover:border-primary/50 transition-all duration-500`}
-                  >
+                  <div className="glass p-6 rounded-2xl border border-primary/30 hover:border-primary/50 transition-all duration-500">
                     <span className="text-sm text-primary font-medium">
                       {exp.period}
                     </span>
+
                     <h3 className="text-xl font-semibold mt-2">{exp.role}</h3>
+
                     <p className="text-muted-foreground">{exp.company}</p>
+
                     <p className="text-sm text-muted-foreground mt-4">
                       {exp.description}
                     </p>
+
                     <div
                       className={`flex flex-wrap gap-2 mt-4 ${
                         idx % 2 === 0 ? "md:justify-end" : ""

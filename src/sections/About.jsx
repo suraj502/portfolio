@@ -5,24 +5,25 @@ const highlights = [
     icon: Code2,
     title: "Clean Code",
     description:
-      "Writing maintainable, scalable code that stands the test of time.",
+      "Writing clean and maintainable code while building scalable web applications using modern technologies.",
   },
   {
     icon: Rocket,
     title: "Performance",
     description:
-      "Optimizing for speed and delivering lightning-fast user experiences.",
+      "Focusing on building efficient and optimized applications that provide smooth user experiences.",
   },
   {
     icon: Users,
     title: "Collaboration",
-    description: "Working closely with teams to bring ideas to life.",
+    description:
+      "Working with other developers, sharing ideas, and continuously learning from the developer community.",
   },
   {
     icon: Lightbulb,
-    title: "Innovation",
+    title: "Continuous Learning",
     description:
-      "Staying ahead with the latest technologies and best practices.",
+      "Always exploring new technologies like Cloud Computing, Docker, and DevOps to grow as a developer.",
   },
 ];
 
@@ -31,6 +32,7 @@ export const About = () => {
     <section id="about" className="py-32 relative overflow-hidden">
       <div className="container mx-auto px-6 relative z-10">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
+          
           {/* Left Column */}
           <div className="space-y-8">
             <div className="animate-fade-in">
@@ -40,44 +42,45 @@ export const About = () => {
             </div>
 
             <h2 className="text-4xl md:text-5xl font-bold leading-tight animate-fade-in animation-delay-100 text-secondary-foreground">
-              Building the future,
+              Learning and building,
               <span className="font-serif italic font-normal text-white">
-                {" "}
-                one component at a time.
+                {" "}one project at a time.
               </span>
             </h2>
 
             <div className="space-y-4 text-muted-foreground animate-fade-in animation-delay-200">
               <p>
-                I'm a passionate software engineer with over 5 years of
-                experience crafting digital products that make a difference. My
-                journey started with a curiosity for how things work on the web,
-                and it has evolved into a deep expertise in modern frontend
+                I'm Suraj, a third-year Information Technology student with a strong
+                interest in software development and modern web technologies.
+                I enjoy building practical projects that help me understand how
+                real-world applications work.
+              </p>
+
+              <p>
+                I am currently developing skills in the MERN stack and exploring
+                technologies like Docker and Cloud Computing. Along with web
+                development, I regularly practice Data Structures and Algorithms
+                to improve my problem-solving and logical thinking skills.
+              </p>
+
+              <p>
+                I am also learning C and C++ to strengthen my programming
+                foundation. My goal is to build scalable web applications and
+                gradually expand my expertise into DevOps and cloud-based
                 technologies.
-              </p>
-              <p>
-                I specialize in React, Next.js, and TypeScript, building
-                everything from sleek landing pages to complex enterprise
-                applications. My approach combines technical excellence with a
-                keen eye for design and user experience.
-              </p>
-              <p>
-                When I'm not coding, you'll find me exploring new technologies,
-                contributing to open-source projects, or sharing knowledge with
-                the developer community.
               </p>
             </div>
 
             <div className="glass rounded-2xl p-6 glow-border animate-fade-in animation-delay-300">
               <p className="text-lg font-medium italic text-foreground">
-                "My mission is to create digital experiences that are not just
-                functional, but truly delightful — products that users love to
-                use and developers love to maintain."
+                "My goal is to continuously learn, build impactful projects,
+                and grow as a developer while exploring modern technologies
+                in web development, cloud computing, and DevOps."
               </p>
             </div>
           </div>
 
-          {/* Right Column - Hilights */}
+          {/* Right Column - Highlights */}
           <div className="grid sm:grid-cols-2 gap-6">
             {highlights.map((item, idx) => (
               <div
@@ -95,6 +98,7 @@ export const About = () => {
               </div>
             ))}
           </div>
+
         </div>
       </div>
     </section>
